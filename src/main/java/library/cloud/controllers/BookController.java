@@ -26,6 +26,12 @@ public class BookController {
         return bookService.getById(id);
     }
 
+    @GetMapping("test")
+    @ApiOperation("Test")
+    public String getById() {
+        return "Hello World";
+    }
+
     @PostMapping
     @ApiOperation("Create new book")
     public BookDTO create(@RequestBody BookDTO dto) {
