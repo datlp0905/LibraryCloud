@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    url: jdbc:sqlserver://localhost:1433;databaseName=LibraryCloud
-    username: sa
-    password: '123456'
+    url: jdbc:sqlserver://librarycloud.database.windows.net;databaseName=LibraryCloud
+    username: 'cloud'
+    password: 'Admin123456'
   jpa:
     hibernate:
       dialect: org.hibernate.dialect.SQLServer2012Dialect
